@@ -29,7 +29,33 @@ Console.WriteLine("aprete para continuar");
 Console.ReadKey();
 Console.Clear();
 
+muestralol();
+Console.ReadKey();
 
+
+
+void muestralol()
+{
+
+    Console.WriteLine("-------------------------muestra lolazaaa---------------------------");
+    foreach (provincia pro in provincias)
+    {
+        Console.WriteLine($"--provincia--");
+        Console.WriteLine($"    Nombre: {pro.nombre} ");
+        Console.WriteLine($"    Gobernador: {pro.gobernador} ");
+        Console.WriteLine($"    Region: {pro.region} ");
+        foreach (ciudad ciu in ciudades)
+        {
+            Console.WriteLine($"---Ciudades---");
+            Console.WriteLine($"    Nombre: {ciu.nombre} ");
+            Console.WriteLine($"    Cantidad Habitantes: {ciu.CantHabitantes} ");
+            Console.WriteLine($"    Nombre: {ciu.SuperficieKM}km²");
+        }
+
+    }
+
+    Console.WriteLine("aprete cualquier teclapara salir!");
+}
 void carga(provincia provinciad)
 {
     provinciad.nombre = prov.nombre;
