@@ -11,7 +11,9 @@ namespace pruebalol
        public string nombre { get; set; }
         public string gobernador { get; set; }
         public string region { get; set; }
-    
+
+
+       public  List<ciudad> ciudades { get; set; } = new();
 
     }
 }
